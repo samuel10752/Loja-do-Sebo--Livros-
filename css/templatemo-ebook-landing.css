@@ -586,11 +586,20 @@ strong {
 }
 
 .hero-image {
+  
   position: relative;
   z-index: 2;
-  bottom: 100px;
+  bottom: 97px;
   display: block;
   margin: auto;
+}
+
+.hero-iframe {
+  position: fixed;
+  top: -74px;
+  left: 809px;
+  width: 365px;
+  height: 516px;
 }
 
 @media screen and (min-width: 991px) {
@@ -774,7 +783,7 @@ strong {
   background-size: contain;
   background-position: left bottom;
   position: relative;
-  margin-top: 50px;
+  margin-top: 150px;
 }
 
 .author-image {
@@ -1049,6 +1058,11 @@ strong {
   }
 }
 
+.custom-container .row {
+  max-width: 1200px; /* Adjust the value as needed */
+  margin: 0 auto; /* Center the row within its container */
+}
+
 .bookWrap {
   position: relative;
   top: 0;
@@ -1060,6 +1074,11 @@ strong {
   overflow: visible;
   perspective: 800px;
   transform: perspective(800px);
+}
+
+.bookWrap {
+  display: inline-block;
+  margin: 5rem 2rem; /* Adjust the margin as needed */
 }
 
 .bookWrap,
@@ -1250,9 +1269,51 @@ noscript {
 .face,
 .spine {
   background-repeat: no-repeat;
-  background-image: url("https://m.media-amazon.com/images/I/81aQ-osTBXL._SY466_.jpg");
-  background-size: auto 345px;
-  /* Height of the book in pixels */
+  background-size: auto 345px; /* Height of the book in pixels */
+}
+
+.book-container {
+  text-align: center;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3 {
+  top: 50px;
+  display: inline-block;
+  margin: 0 120px; /* Adjust the margin as needed for space between books */
+}
+
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  top: 100px;
+  display: inline-block;
+  margin: 0 120px; /* Adjust the margin as needed for space between books */
+}
+
+#js-book-wrap1 .face {
+  background-image: url("https://m.media-amazon.com/images/I/81ibfYk4qmL._SY466_.jpg");
+}
+
+#js-book-wrap2 .face {
+  background-image: url("https://m.media-amazon.com/images/I/71-ghLb8qML._SY466_.jpg");
+}
+
+#js-book-wrap3 .face {
+  background-image: url("https://m.media-amazon.com/images/I/41utemUJkxL._SY445_SX342_.jpg");
+}
+
+#js-book-wrap4 .face {
+  background-image: url("https://m.media-amazon.com/images/I/416E0ngf0xL._SY445_SX342_.jpg");
+}
+
+#js-book-wrap5 .face {
+  background-image: url("https://m.media-amazon.com/images/I/51QemejWYgL._SY445_SX342_.jpg");
+}
+
+#js-book-wrap6 .face {
+  background-image: url("https://m.media-amazon.com/images/I/41Rmw9sY+RL._SY445_SX342_.jpg");
 }
 
 /* Image-specific alignment. */
@@ -1306,16 +1367,40 @@ noscript {
   text-align: center;
 }
 
+.custom-container {
+  margin-right: 550px;
+}
+
+/*---------------------------------------
+  RESPONSIVE STYLES               
+-----------------------------------------*/
+
 @media screen and (max-width: 1245px) {
   /* Estilos para telas menores (exemplo: dispositivos móveis) */
   .ms-auto {
     position: static; /* Ou a propriedade de posição que faz mais sentido para o layout móvel desejado */
     margin-right: 0px;
   }
+
+  .custom-container .row {
+    max-width: 1300px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the row within its container */
+    margin-right: 50px;
+  }
 }
-/*---------------------------------------
-  RESPONSIVE STYLES               
------------------------------------------*/
+
+@media screen and (max-width: 1175px) {
+  /* Estilos para telas menores (exemplo: dispositivos móveis) */
+  .ms-auto {
+    position: static; /* Ou a propriedade de posição que faz mais sentido para o layout móvel desejado */
+    margin-right: 0px;
+  }
+
+  .custom-container .row {
+    margin-right: 150px;
+  }
+}
+
 @media screen and (max-width: 991px) {
   h1 {
     font-size: 48px;
@@ -1405,6 +1490,132 @@ noscript {
   #custom-aba {
     margin-left: 0px;
   }
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 105px; /* Adjust the margin as needed */
+}
+
+.custom-container .row [class^="col-"] {
+    display: block;
+    width: calc(50% - 5px); /* Adjust the width and margin as needed */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    margin-right: 0;
+}
+
+#js-book-wrap3{
+  margin-top: 50px;
+}
+
+}
+
+/* Media query for smaller screens */
+@media (max-width: 800px) {
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 15px; /* Adjust the margin as needed */
+}
+
+.custom-container .row [class^="col-"] {
+    display: block;
+    width: calc(50% - 5px); /* Adjust the width and margin as needed */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    margin-right: 0;
+}
+}
+
+/* Media query for smaller screens */
+@media (max-width: 725px) {
+
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Adjust the margin as needed */
+    justify-content: center; /* Center the columns horizontally */
+}
+
+.custom-container .row [class^="col-"] {
+    top: 5px;
+    display: block;
+    width: 100%; /* Set the width to 100% for a single column */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the column within the container */
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    top: 5px;
+    margin-right: 0;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3,
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  margin-top: 25px !important;
+  display: inline-block;
+  margin-left: 170px !important;
+}
+
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 550px) {
+
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Adjust the margin as needed */
+    justify-content: center; /* Center the columns horizontally */
+}
+
+.custom-container .row [class^="col-"] {
+    top: 5px;
+    display: block;
+    width: 100%; /* Set the width to 100% for a single column */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the column within the container */
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    top: 5px;
+    margin-right: 0;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3,
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  margin-top: 25px !important;
+  display: inline-block;
+  margin-left: 100px !important;
+}
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1452,7 +1663,120 @@ noscript {
     margin-left: 0px;
   }
 
-  .backToTopBtn{
+  .backToTopBtn {
     right: 20px;
   }
+
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Adjust the margin as needed */
+    justify-content: center; /* Center the columns horizontally */
+}
+
+.custom-container .row [class^="col-"] {
+    top: 5px;
+    display: block;
+    width: 100%; /* Set the width to 100% for a single column */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the column within the container */
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    top: 5px;
+    margin-right: 0;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3,
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  margin-top: 25px !important;
+  display: inline-block;
+  margin-left: 60px !important;
+}
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 433px) {
+
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Adjust the margin as needed */
+    justify-content: center; /* Center the columns horizontally */
+}
+
+.custom-container .row [class^="col-"] {
+    top: 5px;
+    display: block;
+    width: 100%; /* Set the width to 100% for a single column */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the column within the container */
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    top: 5px;
+    margin-right: 0;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3,
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  margin-top: 25px !important;
+  display: inline-block;
+  margin-left: 10px !important;
+}
+
+}
+
+
+@media (max-width: 390px) {
+
+
+  .custom-container .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -5px; /* Adjust the margin as needed */
+    justify-content: center; /* Center the columns horizontally */
+}
+
+.custom-container .row [class^="col-"] {
+    top: 5px;
+    display: block;
+    width: 100%; /* Set the width to 100% for a single column */
+    margin-bottom: 10px; /* Add margin between rows */
+    box-sizing: border-box;
+    margin: 0 auto; /* Center the column within the container */
+}
+
+/* Adjust the margin for the last column to prevent extra space */
+.custom-container .row [class^="col-"]:last-child {
+    top: 5px;
+    margin-right: 0;
+}
+
+#js-book-wrap1,
+#js-book-wrap2,
+#js-book-wrap3,
+#js-book-wrap4,
+#js-book-wrap5,
+#js-book-wrap6 {
+  margin-top: 25px !important;
+  display: inline-block;
+  margin-left: 35px !important;
+}
+
 }
