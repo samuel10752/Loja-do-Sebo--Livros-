@@ -92,7 +92,7 @@ h5 {
 }
 
 h6 {
-  color: var(--white-color);
+  color: rgb(0, 255, 98);
   font-size: var(--h6-font-size);
 }
 
@@ -758,7 +758,7 @@ strong {
   AUTHOR SECTION            
 -----------------------------------------*/
 .author-section {
-  background-image: url("../images/circle-scatter-haikei.png");
+
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom;
@@ -774,6 +774,7 @@ strong {
   width: 350px;
   height: 350px;
   object-fit: cover;
+  margin-top: 100px;
 }
 
 /*---------------------------------------
@@ -1358,6 +1359,22 @@ noscript {
   RESPONSIVE STYLES               
 -----------------------------------------*/
 
+
+
+@media screen and (min-width: 1800px) {
+  /* Estilos para telas menores (exemplo: dispositivos móveis) */
+  .ms-auto {
+    position: static; /* Ou a propriedade de posição que faz mais sentido para o layout móvel desejado */
+    margin-right: 0px;
+  }
+
+  .custom-container {
+    max-width: 1300px; /* Adjust the value as needed */
+    margin-right: 350px;
+  }
+
+}
+
 @media screen and (max-width: 1245px) {
   /* Estilos para telas menores (exemplo: dispositivos móveis) */
   .ms-auto {
@@ -1370,6 +1387,7 @@ noscript {
     margin: 0 auto; /* Center the row within its container */
     margin-right: 50px;
   }
+
 }
 
 @media screen and (max-width: 1220px) {
@@ -1382,6 +1400,8 @@ noscript {
   .custom-container .row {
     margin-right: 150px;
   }
+
+
   
 }
 
@@ -1498,6 +1518,7 @@ noscript {
   margin-top: 50px;
 }
 
+
 }
 
 /* Media query for smaller screens */
@@ -1521,6 +1542,9 @@ noscript {
 .custom-container .row [class^="col-"]:last-child {
     margin-right: 0;
 }
+
+
+
 }
 
 /* Media query for smaller screens */
@@ -1559,6 +1583,8 @@ noscript {
   display: inline-block;
   margin-left: 170px !important;
 }
+
+
 
 }
 
