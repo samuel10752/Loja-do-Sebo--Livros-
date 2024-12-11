@@ -130,3 +130,9 @@ Se tiver dúvidas ou sugestões, sinta-se à vontade para entrar em contato:
 
 -   **Autor**: [Samuel10752](https://github.com/samuel10752)
 -   **`enter code here`Email**: samuelcauabarbosa114@gmail.com
+-   
+
+## 🚀 Um Previa como ele está:
+
+-   **Preview**: https://loja-do-sebo-livros.netlify.app
+
