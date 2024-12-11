@@ -62,6 +62,7 @@ Bem-vindo ao projeto **Loja do Sebo - Livros**! Este sistema simula o gerenciame
 
 ## 📂 Estrutura do Projeto
 
+````bash
 Loja-do-Sebo--Livros-/
 ├── css/           # Estilos (CSS)
 ├── fonts/         # Fontes personalizadas
@@ -69,6 +70,7 @@ Loja-do-Sebo--Livros-/
 ├── js/            # Scripts JavaScript
 ├── index.html     # Página principal do projeto
 └── README.md      # Documentação do projeto
+````
 
 ## 🚀 Como Executar o Projeto
 
@@ -85,13 +87,14 @@ cd Loja-do-Sebo--Livros-
 3. **Abra o arquivo `index.html` em um navegador para visualizar o projeto.**
 
 
+
 ## 🔧 Próximos Passos (Sugestões de Melhorias)
 
 - **Adicionar Backend**: Implementar um servidor para gerenciar requisições e persistência de dados.
 - **Banco de Dados**: Conectar o projeto a um banco de dados para gerenciar livros de forma persistente.
 - **Design Responsivo**: Tornar a interface amigável para dispositivos móveis.
 - **Funcionalidades Avançadas**: Como busca por categorias, relatórios de vendas e sistema de login.
-- 
+  
 ## 📜 Licença
 
 Este projeto está licenciado sob a MIT License. Sinta-se à vontade para utilizá-lo, modificá-lo e compartilhá-lo.
